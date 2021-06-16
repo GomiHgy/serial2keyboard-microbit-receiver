@@ -10,7 +10,7 @@ radio.onReceivedString(function (receivedString) {
 })
 radio.setTransmitPower(7)
 radio.setFrequencyBand(7)
-radio.setGroup(1)
+radio.setGroup(7)
 radio.sendString("")
 serial.redirect(
 SerialPin.P0,
