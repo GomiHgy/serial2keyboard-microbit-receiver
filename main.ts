@@ -8,6 +8,10 @@ radio.onReceivedString(function (receivedString) {
     led.toggle(4, 4)
     serial.writeString(receivedString)
 })
+radio.setTransmitPower(7)
+radio.setFrequencyBand(7)
+radio.setGroup(1)
+radio.sendString("")
 serial.redirect(
 SerialPin.P0,
 SerialPin.P1,
